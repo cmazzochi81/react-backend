@@ -1,4 +1,5 @@
-import express from 'express';
+//import express from 'express';
+const express = require('express');
 //import { routes } from './routes';
 const importDir = require('./routes/index.js');
 const routes = importDir({directoryPath: './routes'});
