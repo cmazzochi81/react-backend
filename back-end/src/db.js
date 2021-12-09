@@ -1,4 +1,5 @@
-import { MongoClient } from 'mongodb';
+//import { MongoClient } from 'mongodb';
+const {MongoClient} = require('mongodb');
 
 let client;
 
