@@ -1,5 +1,4 @@
-import sendgrid from '@sendgrid/mail';
-
+const sendgrid = require('sendgrid');
 const SENDGRID_API_KEY='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';
 sendgrid.setApiKey(SENDGRID_API_KEY);
 

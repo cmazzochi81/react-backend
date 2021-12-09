@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { oAuthClient } from './oAuthClient';
+const axios = require('axios');
+const oAuthClient = require('oAuthClient');
 
 const getAccessAndBearerTokenUrl = ({accessToken } ) =>
 `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${accessToken}`;

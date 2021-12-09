@@ -1,4 +1,4 @@
-import { google } from 'googleapis';
+const google = require('google');
 
 export const oAuthClient = new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,

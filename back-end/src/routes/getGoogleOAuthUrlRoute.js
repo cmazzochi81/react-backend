@@ -1,5 +1,4 @@
-import { getGoogleOAuthUrl } from '../util/getGoogleOAuthUrl';
-
+const getGoogleOAuthUrl = require('../util/getGoogleOAuthUrl');
 export const getGoogleOAuthUrlRoute = {
     path: '/auth/google/url',
     method: 'get',
