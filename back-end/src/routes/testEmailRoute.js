@@ -1,5 +1,4 @@
-import { sendEmail } from '../util/sendEmail';
-
+const sendEmail = require('../util/sendEmail')
 export const testEmailRoute = {
 
     path: '/api/test-email',

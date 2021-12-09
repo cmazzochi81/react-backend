@@ -1,8 +1,8 @@
-import {getDbConnection} from '../db';
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import { v4 as uuid } from 'uuid';
-import { sendEmail } from '../util/sendEmail';
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const getDbConnection = require('../db');
+const uuid = require('uuid');
+const sendEmail = require('../util/sendEmail');
 
 export const signUpRoute = {
     path: '/api/signup',

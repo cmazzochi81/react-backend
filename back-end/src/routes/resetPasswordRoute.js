@@ -1,5 +1,5 @@
-import bcrypt from 'bcrypt';
-import { getDbConnection } from '../db';
+const bcrypt = require('bcrypt');
+const getDbConnection = require('../db');
 
 export const resetPasswordRoute = {
 
