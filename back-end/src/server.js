@@ -2,7 +2,7 @@ import express from 'express';
 //import { routes } from './routes';
 const importDir = require('./routes/index.js');
 const routes = importDir({directoryPath: './routes'})
-import { initializeDbConnection } from './db';
+import { initializeDbConnection } from './db.js';
 const PORT = process.env.PORT || 8080;
 
 const app = express();
