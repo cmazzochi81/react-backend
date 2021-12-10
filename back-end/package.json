@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "nodemon --exec babel-node -r dotenv/config ./src/server.js",
     "build": "ng build",
-    "heroku-postbuild": "ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node ./build/index.js"
   },
