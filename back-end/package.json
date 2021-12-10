@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf build && mkdir build",
     "dev": "nodemon --exec babel-node -r dotenv/config ./src/server.js",
+    "clean": "mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node ./build/index.js",
-    "build": "npm run clean && npm run build-babel",
-    "build-babel": "babel -d ./build ./src -s"
+    "start": "npm run build && node ./build/index.js"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +28,9 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@babel/core": "7.13.10",
+    "@babel/node": "7.13.12",
+    "@babel/preset-env": "7.13.12",
     "nodemon": "2.0.7"
   }
 }
