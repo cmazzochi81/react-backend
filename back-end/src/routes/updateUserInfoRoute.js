@@ -1,6 +1,6 @@
-const jwt = require('jsonwebtoken');
-const ObjectID = require('mongodb');
-const getDbConnection = require('../db');
+import jwt from 'jsonwebtoken';
+import { ObjectID } from 'mongodb';
+import { getDbConnection } from '../db';
 
 export const updateUserInfoRoute = { 
 

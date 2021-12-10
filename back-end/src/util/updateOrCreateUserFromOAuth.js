@@ -1,4 +1,5 @@
-const getDbConnection = require('../db.js');
+import { getDbConnection } from '../db';
+
 export const updateOrCreateUserFromOAuth = async ({ oAuthUserInfo }) => {
     const {
         id: googleId,

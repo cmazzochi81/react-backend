@@ -1,11 +1,11 @@
-const {MongoClient} = require('mongodb');
+import { MongoClient } from 'mongodb';
 
 let client;
 
 export const initializeDbConnection = async () => {
 
     try{
-        // client = await MongoClient.connect('mongodb://localhost:27017', {
+        //client = await MongoClient.connect('mongodb://localhost:27017', {
         client = await MongoClient.connect('mongodb+srv://reactauth:EdkJSf5zjiWw9Su@cluster0.a0egc.mongodb.net/react-auth-db?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true,

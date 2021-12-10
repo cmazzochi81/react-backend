@@ -1,4 +1,4 @@
-const oAuthClient = require('oAuthClient');
+import { oAuthClient } from "./oAuthClient";
 
 export const getGoogleOAuthUrl = () => {
 

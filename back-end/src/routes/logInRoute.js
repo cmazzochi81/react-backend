@@ -1,6 +1,7 @@
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const getDbConnection = require('../db');
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+//import db from 'mongodb/lib/db';
+import { getDbConnection} from '../db';
 
 export const logInRoute = {
     path: '/api/login',

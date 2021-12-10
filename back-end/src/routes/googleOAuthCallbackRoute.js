@@ -1,7 +1,6 @@
-
-const jwt = require('jsonwebtoken');
-const getGoogleUser = require('../util/getGoogleUser');
-const updateOrCreateUserFromOAuth = require('../util/updateOrCreateUserFromOAuth');
+import jwt from 'jsonwebtoken';
+import { getGoogleUser} from '../util/getGoogleUser';
+import { updateOrCreateUserFromOAuth } from '../util/updateOrCreateUserFromOAuth';
 
 export const googleOAuthCallbackRoute = {
 

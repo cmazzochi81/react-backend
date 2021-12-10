@@ -1,12 +1,12 @@
-const forgotPasswordRoute = require('./forgotPasswordRoute');
-const getGoogleOAuthUrlRoute = require('./getGoogleOAuthUrlRoute');
-const logInRoute = require('./logInRoute');
-const signUpRoute = require('./signUpRoute');
-const testRoute = require('./testRoute');
-const updateUserInfoRoute = require('./updateUserInfoRoute');
-const verifyEmailRoute = require('./verifyEmailRoute');
-const resetPasswordRoute = require('./resetPasswordRoute');
-const googleOAuthCallbackRoute = require('./googleOAuthCallbackRoute');
+import { forgotPasswordRoute } from './forgotPasswordRoute';
+import { getGoogleOAuthUrlRoute } from './getGoogleOAuthUrlRoute';
+import { logInRoute } from './logInRoute';
+import { signUpRoute} from './signUpRoute';
+import { testRoute } from './testRoute';
+import { updateUserInfoRoute } from './updateUserInfoRoute';
+import { verifyEmailRoute } from './verifyEmailRoute';
+import { resetPasswordRoute } from './resetPasswordRoute';
+import { googleOAuthCallbackRoute } from './googleOAuthCallbackRoute';
 
 export const routes = [
     testRoute,
