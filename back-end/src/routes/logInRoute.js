@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import { getDbConnection} from '../db';
 
 export const logInRoute = {
-    path: 'https://reactauth-backend.herokuapp.com/api/login',
+    path: '/api/login',
     method: 'post',
     handler: async (req, res) => {
 
