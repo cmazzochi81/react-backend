@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable object-curly-spacing */
+/* eslint-disable linebreak-style */
+/* eslint-disable quotes */
 import sendgrid from "@sendgrid/mail";
 
 const SENDGRID_API_KEY =

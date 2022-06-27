@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable comma-dangle */
 /* eslint-disable spaced-comment */
 /* eslint-disable indent */
@@ -47,7 +48,7 @@ export const signUpRoute = {
         subject: "Please verify your email bro",
         text: ` 
                     Thanks for signing up! To verify your email, click here: 
-                    http://localhost:8080/api/verify-email/${verificationString}
+                    https://reactauth-backend.herokuapp.com/api/verify-email/${verificationString}
                 `,
       });
     } catch (e) {
