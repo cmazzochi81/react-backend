@@ -48,7 +48,7 @@ export const signUpRoute = {
         subject: "Please verify your email bro",
         text: ` 
                     Thanks for signing up! To verify your email, click here: 
-                    https://reactauth-backend.herokuapp.com/api/verify-email/${verificationString}
+                    <a href="https://reactauth-backend.herokuapp.com/api/verify-email/${verificationString}"></a>
                 `,
       });
     } catch (e) {
