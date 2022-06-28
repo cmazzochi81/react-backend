@@ -20,7 +20,7 @@ import jwt from "jsonwebtoken";
 import { getDbConnection } from "../db";
 
 export const verifyEmailRoute = {
-  path: "/api/verify-email",
+  path: "/api/confirm-email",
   method: "put",
   handler: async (req, res) => {
     const { verificationString } = req.body;

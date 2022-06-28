@@ -48,7 +48,7 @@ export const signUpRoute = {
         subject: "Please verify your email",
         text: ` 
                     Thanks for signing up! To verify your email, click here: 
-                    https://react-auth-frontend.herokuapp.com/please-verify/${verificationString}
+                    https://react-auth-frontend.herokuapp.com/confirm-email/${verificationString}
                 `,
       });
     } catch (e) {
