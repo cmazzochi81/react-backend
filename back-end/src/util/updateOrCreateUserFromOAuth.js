@@ -1,30 +1,35 @@
-import { getDbConnection } from '../db';
+/* eslint-disable linebreak-style */
+/* eslint-disable comma-dangle */
+/* eslint-disable linebreak-style */
+/* eslint-disable quotes */
+/* eslint-disable linebreak-style */
+/* eslint-disable indent */
+/* eslint-disable linebreak-style */
+/* eslint-disable object-curly-spacing */
+import { getDbConnection } from "../db";
 
 export const updateOrCreateUserFromOAuth = async ({ oAuthUserInfo }) => {
-    const {
-        id: googleId,
-        verified_email: isVerified,
-        email,
-    } = oAuthUserInfo;
+  const { id: googleId, verified_email: isVerified, email } = oAuthUserInfo;
 
-    const db = getDbConnection('react-auth-db');
-    const existingUser = await db.collection('users').findOne({email});
+  const db = getDbConnection("react-auth-db");
+  const existingUser = await db.collection("users").findOne({ email });
 
-    if (existingUser) { 
-        const result = await db.collection('users').findOneAndUpdate(
-            { email }, 
-            { $set: { googleId, isVerified }},
-            { returnOriginal: false },
-        );
-        return result.value;
-    }else{
-        const result = await db.collection('users').insertOne({
-            email,
-            googleId,
-            isVerified,
-            info: {}
-        });
-        return result.ops[0];
-    }
-
-}
+  if (existingUser) {
+    const result = await db
+      .collection("users")
+      .findOneAndUpdate(
+        { email },
+        { $set: { googleId, isVerified } },
+        { returnOriginal: false }
+      );
+    return result.value;
+  } else {
+    const result = await db.collection("users").insertOne({
+      email,
+      googleId,
+      isVerified,
+      info: {},
+    });
+    return result.ops[0];
+  }
+};
