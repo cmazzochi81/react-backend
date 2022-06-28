@@ -29,7 +29,9 @@ export const googleOAuthCallbackRoute = {
       process.env.JWT_SECRET,
       (err, token) => {
         if (err) return res.sendStatus(500);
-        res.redirect(`https://reactauth-frontend.herokuapp.com/user-profile`);
+        res.redirect(
+          `https://reactauth-frontend.herokuapp.com/login?token=${token}`
+        );
       }
     );
   },
