@@ -45,10 +45,10 @@ export const signUpRoute = {
       await sendEmail({
         to: email,
         from: "cmazzo@me.com",
-        subject: "Please verify your email bro",
+        subject: "Please verify your email",
         text: ` 
                     Thanks for signing up! To verify your email, click here: 
-                    <a href="https://reactauth-backend.herokuapp.com/api/verify-email/${verificationString}"></a>
+                    https://chrismazzochi.com/please-verify/${verificationString}
                 `,
       });
     } catch (e) {
