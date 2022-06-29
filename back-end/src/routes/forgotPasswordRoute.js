@@ -27,7 +27,7 @@ export const forgotPasswordRoute = {
           subject: "Password Reset",
           text: `
                             To reset your password, click this link: 
-                            https://chrismazzochi.com/reset-password/${passwordResetCode}
+                            https://reactauth-frontend.herokuapp.com/reset-password/${passwordResetCode}
 
 
                         `,
