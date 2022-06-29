@@ -27,7 +27,7 @@ export const forgotPasswordRoute = {
           subject: "Password Reset",
           text: `
                             To reset your password, click this link: 
-                            http://localhost:8080/reset-password/${passwordResetCode}
+                            http://localhost:3000/reset-password/${passwordResetCode}
 
 
                         `,
