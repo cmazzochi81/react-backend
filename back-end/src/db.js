@@ -5,7 +5,7 @@ let client;
 export const initializeDbConnection = async () => {
 
     try{
-        //client = await MongoClient.connect('mongodb://localhost:27017', {
+        //client = await MongoClient.connect('', {
         console.log("Trying database connection");
         client = await MongoClient.connect('', {
         useNewUrlParser: true,
