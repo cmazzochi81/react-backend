@@ -7,7 +7,7 @@ export const initializeDbConnection = async () => {
     try{
         //client = await MongoClient.connect('mongodb://localhost:27017', {
         console.log("Trying database connection");
-        client = await MongoClient.connect('mongodb+srv://reactauth:EdkJSf5zjiWw9Su@cluster0.a0egc.mongodb.net/react-auth-db?retryWrites=true&w=majority', {
+        client = await MongoClient.connect('', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         });
